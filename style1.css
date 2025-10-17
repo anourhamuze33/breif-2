@@ -1,0 +1,656 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("./ressources/Character_Confirmation.png");
+    display: flex;
+    align-items: center;
+}
+.container{
+    background-image: url("./assets/img/Vector 47.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 620px;
+    margin-left: 50px;
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(assets/Orbitron-VariableFont_wght.ttf) format('truetype')
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url(assets/BLENDERPRO-BOLD.TTF) format('truetype')
+}
+@import url('https://fonts.cdnfonts.com/css/libre-barcode-ean13-text');
+.heders{
+position: relative;
+left: 50px;
+}
+.heder3{
+position: relative;
+left: 24px;
+}
+.turchelon_element{
+position: relative;
+bottom: 65px;
+}
+/*      pagination           */
+.character_pagination{
+    color: #23852d;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.character_pagination::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #23852d;
+    display: inline-block;
+    margin-right: .3rem;
+    margin-bottom: .09rem
+}
+.weapon_pagination{
+    color: #537DD8;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.weapon_pagination::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #537DD8;
+    display: inline-block;
+    margin-right: .3rem;
+    margin-bottom: .09rem
+}
+.friend_pagination{
+    color: #FFEA31;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.friend_pagination::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #FFEA31;
+    display: inline-block;
+    margin-right: .3rem;
+    margin-bottom: .09rem
+}
+.profile_pagination{
+    color: #B83639;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+.profile_pagination::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #B83639;
+    display: inline-block;
+    margin-right: .3rem;
+    margin-bottom: .09rem
+}
+
+
+.character_pagination--head1{
+    color: #fff;
+    font-family: Orbitron;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: normal;
+    text-transform: uppercase;
+    top: 5%;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.coditions_rewardes{
+    color: #fff;
+    font-family: Orbitron;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 50px;
+    position: relative;
+    top: 60px;
+    width: 720px;
+    word-spacing: 2px;
+}
+.head_edit{
+position: relative;
+right: 50px;
+}
+.character_pagination--head2{
+text-transform: uppercase;
+font-family: Orbitron;
+font-size: 12px;
+font-weight: normal;
+color: #fff;
+}
+.heder3_style{
+background-color: #195820;
+padding-left: 6px;
+padding-right: 6px;
+clip-path: polygon(0 0, 95% 1%, 100% 30%, 100% 100%,0 100%);
+}
+.heder4_style{
+background-color: #FFEA31;
+padding-left: 6px;
+padding-right: 6px;
+clip-path: polygon(0 0, 95% 1%, 100% 30%, 100% 100%,0 100%);
+}
+.heder5_style{
+background-color: #B83639;
+padding-left: 6px;
+padding-right: 6px;
+clip-path: polygon(0 0, 95% 1%, 100% 30%, 100% 100%,0 100%);
+}
+.heder_weapon3_style{
+font-weight: bold;
+background-color: #537DD8;
+padding-left: 6px;
+padding-right: 6px;
+clip-path: polygon(0 0, 95% 1%, 100% 30%, 100% 100%,0 100%);
+}
+.companion_story{
+color: #fff;
+font-family: Orbitron;
+width: 1090px;
+margin-top: 30px;
+}
+.companion_img{
+    width: 170px;
+    height: 250px;
+    position: relative;
+    left: 50px;
+  
+}
+.weapon_img{
+    position: relative;
+    width: 250px;
+    bottom: 170px;
+    left: 80px;
+    z-index: 2;
+}
+.weapon_background{
+    z-index:3;
+    width: 240px;
+    height: 190px;
+    position: relative;
+    top: 190px;
+    left: 80px;
+}
+.weapon_border{
+ z-index: 1;
+     width: 250px;
+    height: 200px;
+ position: relative;
+ bottom: 10px;
+left: 80px;
+
+}
+.container_elementspack{
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    justify-content: center;
+     align-items: center;
+     gap: 40px;
+}
+.container_elementspack_friend{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    justify-content: center;
+    align-items: center;
+}
+.companion_name{
+color: #fff;
+font-family: Orbitron;
+font-size: 30px;
+text-transform: uppercase;
+font-weight: normal;
+margin-bottom: 5px;
+margin-top: 5px;
+}
+.companion_story{
+color: #fff;
+font-family: "Blender Pro";
+font-size: 12px; 
+width: 630px;
+text-transform: capitalize;
+}
+.character-info-title{
+    color: #000000;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+.character-info-title{
+    background-image:
+    display: inline-block;
+    width: 123px;
+    height: 14.5px;
+    background-color: rgb(49, 255, 121);
+    clip-path: polygon(0 0, 80% 1%, 100% 100%, 100% 100%,0 100%);
+}
+.weapon-info-title{
+    color: #000000;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+.weapon-info-title{
+    background-image:
+    display: inline-block;
+    width: 123px;
+    height: 14.5px;
+    background-color: #537DD8;
+    clip-path: polygon(0 0, 80% 1%, 100% 100%, 100% 100%,0 100%);
+}
+.companion_barcode-version{
+font-family: 'Libre Barcode EAN13 Text', sans-serif;
+color: #fff;
+font-weight: lighter;
+font-size: 8px;
+margin-bottom: 4px;
+}
+/*          loading barre        */
+.character_loading_info{
+    display: flex;
+    align-items: center;
+    width: 740px;
+    height: 10px;
+    position: relative;
+    left: 230px;
+    top: 45px;
+    justify-content: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: Orbitron;
+    text-transform: uppercase;
+}
+.loading_pourcentage{
+  font-size: 40px;
+  position: relative;
+  bottom: 10px;
+}
+.loading{
+    font-size: 18px;
+}
+.loading_3{
+font-weight: lighter;
+opacity: 0.5;
+}
+
+.character_loading::after{
+    content: "";
+    display: inline-block;
+    width: 740px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.265);
+    position: relative;
+    top: 30px;
+    left: 230px;
+    z-index: 2;
+}
+.character_loading_progress::after{
+    content: "";
+    display: inline-block;
+    width: 296px;
+    height: 4px;
+    background-color: rgb(19, 222, 97);
+    z-index: 1;
+    position: relative;
+    top: 48px;
+    left: 230px;
+    box-shadow: 2px 1px 6px #36B862;
+}
+.weapon_loading_progress::after{
+    content: "";
+    display: inline-block;
+    width: 296px;
+    height: 4px;
+    background-color: #537DD8;
+    z-index: 1;
+    position: relative;
+    top: 48px;
+    left: 230px;
+    box-shadow: 2px 1px 6px #537DD8;
+}
+.friend_loading_progress::after{
+    content: "";
+    display: inline-block;
+    width: 296px;
+    height: 4px;
+    background-color: #FFEA31;
+    z-index: 1;
+    position: relative;
+    top: 48px;
+    left: 230px;
+    box-shadow: 2px 1px 6px #FFEA31;
+}
+.changer_character{
+    margin-top: 40px;
+}
+.changer_character_button{
+    background-color: #31ff766c;
+    border:none;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100px;
+    height: 35px;
+    z-index: 3;
+    position: relative;
+    bottom: 20px;
+ 
+}
+
+.changer_character_button_back{
+    opacity: 0.14;
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    bottom: 17px;
+}
+.changer_weapon_button{
+    background-color: transparent;
+    border:none;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100px;
+    height: 35px;
+    z-index: 3;
+    position: relative;
+    bottom: 20px;
+ 
+}
+
+.changer_weapon_button_back{
+    opacity: 0.10;
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    bottom: 17px;
+}
+.changer_character_button_text{
+
+font-family: "Orbitron";
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.70;
+    z-index: 1;
+}
+.aute_companion{
+display: flex;
+margin-top: 60px;
+flex-direction: row;
+}
+.aute_friend{
+display: flex;
+margin-top: 60px;
+flex-direction: row;
+gap: 50px;
+position: relative;
+right: 10px;
+}
+.aute_companion2{
+width: 80px;
+height: 80px;
+border: 1px #36B862 solid;
+box-shadow: 0.5px 0.5px 1px #36B862;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.line{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+.column{
+    content: "";
+    display: inline-block;
+    width: 0.3px;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 70px;
+}
+.arrow_right{
+    position: relative;
+    right: 50px;
+    bottom: 60px;
+}
+.arrow_left{
+position: relative;
+left: 60px;
+bottom: 60px;
+}
+.arrow_left_weapon{
+position: relative;
+left: 60px;
+bottom: 60px;
+}
+.arrow_right_weapon{
+    position: relative;
+    right: px;
+    bottom: 60px;
+}
+.aute_companion{
+position: relative;
+right: 40px;
+}
+.aute_weapon{
+display: flex;
+margin-top: 60px;
+flex-direction: row;
+position: relative;
+right: 50px;
+bottom: 165px;
+}
+.aute_weapon1{
+position: relative;
+top: 15px;
+}
+.aute_weapon3{
+position: relative;
+top: 15px;
+}
+.Card{
+    width: 210px;
+    height: 300px;
+}
+.art_Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text_card{
+    position: relative;
+    bottom: 70px;
+}
+.button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 50px;
+z-index: 2;
+}
+.code{
+    font-family: Orbitron;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 7px;
+}
+.copier{
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 60px;
+    bottom: 20px;
+}
+.copier_sha{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 60px;
+    bottom: 40px;
+}
+.code_generate_text{
+    font-family: "Blender Pro";
+    font-weight: bold;
+    color: #fff; 
+}
+.button_copier_share{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 1% 1% 6px 0%;
+    corner-shape: bevel;
+}
+.code_generate_button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px 1% 1% 0%;
+    corner-shape: bevel;
+}
+.partager{
+    width: 17px;
+    height: 17px;
+    z-index: 1;
+    position: relative;
+    bottom: 100px;
+    right: 36px;
+}
+.partager_sha{
+    width: 17px;
+    height: 17px;
+    position: relative;
+    bottom: 70px;
+    right: 36px;
+}
+.partager_cheak{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 40px;
+    right: 28px;
+
+}
+
+  .page_option_share {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(6px);
+
+  }
+  .share_op {
+    background-image: url("./ressources/Character_Confirmation.png");
+    padding: 30px;
+    border: 1px solid #fff;
+    width: 600px;
+    height: 200px;
+    background-image: 
+    filter: blur(5px);
+    opacity: 0.98;
+    
+  }
+  .items_share{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+  }
+
+  #share_op:target {
+    display: flex;
+  }
+  .moyenne_invitation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 60px;
+}
+.moyenne_invitation_general{
+width: 50px;
+}
+.moyenne_invitation_face{
+width: 24px;
+height: 50px;
+}
+
+
+
+.retour{
+color: #fff;
+border: 1px solid #fff;
+position: relative;
+bottom: 278px;
+left: 630px;
+width: 30px;
+height: 30px;
+font-size: 28px;
+text-decoration: none;
+}
