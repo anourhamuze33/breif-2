@@ -199,6 +199,16 @@ margin-top: 30px;
     left: 50px;
   
 }
+.companion_img:hover{
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+.changer_weapon_button_w:hover{
+    cursor: pointer;
+     transform: translateY(-5px);
+     box-shadow: 0 3px 8px #76786b;
+}
+
 .weapon_img{
     position: relative;
     width: 250px;
@@ -224,7 +234,9 @@ left: 80px;
 
 }
 .character_img{
-    width: 165px;
+    width: 180px;
+    position: relative;
+    left: 20px;
 }
 .knif_img{
 width: 170px;
@@ -311,7 +323,7 @@ margin-bottom: 4px;
     height: 10px;
     position: relative;
     left: 230px;
-    top: 45px;
+    top: 115px;
     justify-content: center;
     justify-content: space-between;
     color: #fff;
@@ -354,10 +366,186 @@ opacity: 0.5;
     left: 230px;
     box-shadow: 2px 1px 6px #36B862;
 }
+
+
+.caree::after{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 15px;
+    background-color: #36B862;
+    position: relative;
+    left: 1010px;
+    top: 120px;
+
+}
+.line_analyse0::after{
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 4px;
+    background-color: #36B862;
+    position: relative;
+    left: 500px;
+    top: 120px;
+}
+.caree_analyse::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    background-color: #36B862;
+    position: relative;
+    left: 760px;
+    top: 138.5px;
+}
+.analyse{
+    text-transform: uppercase;
+    font-family: Orbitron;
+    color: #36B862;
+    font-size: 11px;
+    position: relative;
+    left: 410px;
+    top: 105px;
+}
+
+
+
+.caree_1::after{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 15px;
+    background-color: #537DD8;
+    position: relative;
+    left: 1010px;
+    top: 120px;
+
+}
+.line_analyse_1::after{
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 4px;
+    background-color: #537DD8;
+    position: relative;
+    left: 500px;
+    top: 120px;
+}
+.caree_analyse1::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    background-color: #537DD8;
+    position: relative;
+    left: 760px;
+    top: 138.5px;
+}
+.analyse1{
+    text-transform: uppercase;
+    font-family: Orbitron;
+    color: #537DD8;
+    font-size: 11px;
+    position: relative;
+    left: 410px;
+    top: 105px;
+}
+
+
+
+
+.caree_2::after{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 15px;
+    background-color: #FFEA31;
+    position: relative;
+    left: 1010px;
+    top: 120px;
+
+}
+.line_analyse_2::after{
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 4px;
+    background-color: #FFEA31;
+    position: relative;
+    left: 500px;
+    top: 120px;
+}
+.caree_analyse2::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    background-color: #FFEA31;
+    position: relative;
+    left: 760px;
+    top: 138.5px;
+}
+.analyse2{
+    text-transform: uppercase;
+    font-family: Orbitron;
+    color: #FFEA31;
+    font-size: 11px;
+    position: relative;
+    left: 410px;
+    top: 105px;
+}
+
+
+.caree_3::after{
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 15px;
+    background-color: #B83639;
+    position: relative;
+    left: 1010px;
+    top: 120px;
+
+}
+.line_analyse::after{
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 4px;
+    background-color: #B83639;
+    position: relative;
+    left: 500px;
+    top: 120px;
+}
+.caree_analyse3::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    background-color: #B83639;
+    position: relative;
+    left: 760px;
+    top: 138.5px;
+}
+.analyse3{
+    text-transform: uppercase;
+    font-family: Orbitron;
+    color: #B83639;
+    font-size: 11px;
+    position: relative;
+    left: 410px;
+    top: 105px;
+}
+
+
+
+
+
 .weapon_loading_progress::after{
     content: "";
     display: inline-block;
-    width: 296px;
+    width: 444px;
     height: 4px;
     background-color: #537DD8;
     z-index: 1;
@@ -369,7 +557,7 @@ opacity: 0.5;
 .friend_loading_progress::after{
     content: "";
     display: inline-block;
-    width: 296px;
+    width: 592px;
     height: 4px;
     background-color: #FFEA31;
     z-index: 1;
@@ -402,7 +590,7 @@ opacity: 0.5;
     left: 0px;
     bottom: 17px;
 }
-.changer_weapon_button{
+.changer_weapon_button_w{
     background-color: transparent;
     border:none;
     padding-right: 10px;
@@ -432,6 +620,11 @@ font-family: "Orbitron";
     text-transform: uppercase;
     opacity: 0.70;
     z-index: 1;
+}
+.changer_character_button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+
 }
 .aute_companion{
 display: flex;
@@ -592,6 +785,7 @@ padding: 0;
     backdrop-filter: blur(6px);
 
   }
+
   .share_op {
     background-image: url("./ressources/Character_Confirmation.png");
     padding: 30px;
@@ -648,13 +842,148 @@ text-decoration: none;
     font-weight: bold;
     color: #fff;
     font-size: 12px;
+text-align: center;
 }
 .barcode_befor{
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 .character_elements{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.v0_charachter{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+}
+.character_poly{
+    color: #000000;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+.character_poly{
+    background-image:
+    display: inline-block;
+    width: 110px;
+    height: 14.5px;
+    background-color: #B83639;
+    clip-path: polygon(0 0, 80% 1%, 100% 100%, 100% 100%,0 100%);
+}
+.btn_character{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;    
+}
+.changer_character_butn{
+    background-color: #eeff0054;
+    border:none;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100px;
+    height: 35px;
+ 
+    position: relative;
+    top: 65%;
+ 
+}
+
+.changer_character_butn:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 8px #849a0a;
+}
+.companion_elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dino_poly{
+    color: #000000;
+    font-family: "Blender Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+}
+.dino_poly{
+    background-image:
+    display: inline-block;
+    width: 110px;
+    height: 14.5px;
+    background-color: #B88236;
+    clip-path: polygon(0 0, 80% 1%, 100% 100%, 100% 100%,0 100%);
+}
+.two_buttons{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 250px;
+}
+.changer_companion_butn{
+    background-color: #B83639;
+    border:none;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100px;
+    height: 35px;
+ 
+    position: relative;
+    top: 20px;
+    right: 50px;
+ 
+}
+.changer_companion_butn:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 8px #870909;
+}
+.changer_weapon_button{
+    background-color: #eeff0054;
+    border:none;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100px;
+    height: 35px;
+ 
+    position: relative;
+    top: 20px;
+    left: 60px;
+ 
+}
+.changer_weapon_button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 8px #849a0a;
+}
+.weapon_elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.character_loading_progress_profile::after{
+    content: "";
+    display: inline-block;
+    width: 740px;
+    height: 4px;
+    background-color: rgb(222, 19, 19);
+    z-index: 1;
+    position: relative;
+    top: 48px;
+    left: 230px;
+    box-shadow: 2px 1px 6px #b83636;
 }
